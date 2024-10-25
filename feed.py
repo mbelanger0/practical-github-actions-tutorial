@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as xml_tree
 import yaml
 
-with open("feed.yaml", "r") as file:
+with open("feed.yaml", "r", encoding="UTF-8") as file:
     yaml_data = yaml.safe_load(file)
 
 rss_element = xml_tree.Element(
